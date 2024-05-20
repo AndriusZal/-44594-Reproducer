@@ -5,7 +5,7 @@
  * @format
  */
 
-import React from 'react';
+import React, {useRef} from 'react';
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -56,6 +56,7 @@ function Section({children, title}: SectionProps): React.JSX.Element {
 }
 
 function App(): React.JSX.Element {
+  const counter = useRef(0);
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -63,7 +64,9 @@ function App(): React.JSX.Element {
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
+    <SafeAreaView style={backgroundStyle} 
+            onTouchMove={()=>console.log("moving" + counter.current++)}
+            onTouchEnd={() => counter.current = 0}>
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}

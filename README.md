@@ -1,13 +1,6 @@
-# -44594-Reproducer
+# #44594 Reproducer
 
 ![Build](https://github.com/AndriusZal/-44594-Reproducer/workflows/Pre%20Merge%20Checks/badge.svg)
 
-This is your new React Native Reproducer project.
+This is your new React Native Reproducer project for issue #44594.
 
-## Reproducer todo list
-
-- [x] Create a new reproducer project.
-- [ ] Git clone your repository locally.
-- [ ] Edit the project to reproduce the failure you're seeing.
-- [ ] Push your changes, so that Github Actions can run the CI.
-- [ ] Make sure the repository is public and share the link with the issue you reported.
